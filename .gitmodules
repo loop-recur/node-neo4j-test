@@ -1,0 +1,3 @@
+[submodule "neo4j-test-server"]
+	path = neo4j-test-server
+	url = https://github.com/loop-recur/neo4j-test-server.git
