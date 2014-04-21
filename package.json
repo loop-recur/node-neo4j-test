@@ -1,0 +1,23 @@
+{
+  "name": "neo4j-test",
+  "version": "0.0.0",
+  "description": "Node scripts and libraries for running an in-memory neo4j database in your test scripts.",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loop-recur/node-neo4j-test.git"
+  },
+  "keywords": [
+    "neo4j",
+    "graph",
+    "database",
+    "test",
+    "server"
+  ],
+  "author": "Adam C. Baker <adam.durandal@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/loop-recur/node-neo4j-test/issues"
+  },
+  "homepage": "https://github.com/loop-recur/node-neo4j-test"
+}
