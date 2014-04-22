@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+var sh = require('shelljs');
+
+var getopt = require('node-getopt').create([
+  ['q', 'quiet', 'Suppres neo4j start output'],
+  ['r', 'repeatable', 'Exit with success if server is already running.'],
+  ['h', 'help', 'Show this help text'],
+]);
+var opts = getopt.parseSystem().options;
+if(opts.help){
+  getopt.showHelp();
+  sh.exit(0);
+}
+
+var code = sh.exec(
+  __dirname+"/../neo4j-test-server/bin/neo4j start",
+  {silent: opts.quiet}
+).code;
+
+//neo4j start exits with code 2 if the server is already running.
+if(opts.repeatable && code == 2) {
+  sh.exit(0);
+} else {sh.exit(code); }
