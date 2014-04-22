@@ -2,7 +2,7 @@
 var sh = require('shelljs');
 
 var getopt = require('node-getopt').create([
-  ['q', 'quiet', 'Suppres neo4j start output'],
+  ['q', 'quiet', 'Suppress neo4j start output'],
   ['r', 'repeatable', 'Exit with success if server is already running.'],
   ['h', 'help', 'Show this help text'],
 ]);
