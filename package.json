@@ -1,6 +1,6 @@
 {
   "name": "neo4j-test",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node scripts and libraries for running an in-memory neo4j database in your test scripts.",
   "scripts": {
     "install": "./bin/install"
