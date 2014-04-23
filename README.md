@@ -8,8 +8,7 @@ database makes test isolation difficult.
 
 Neo4j-test makes testing your app against a real neo4j a little easier.
 It uses [loop-recur/neo4j-test-server](https://github.com/loop-recur/neo4j-test-server)
-and provides scripts to bring up (and eventually, take down) your test
-REST server.
+and provides scripts to bring up and take down your test REST server.
 
 Installation and usage
 ----------------------
@@ -19,9 +18,13 @@ Installation and usage
 
 Options:
 * `-q`, `--quiet`: Supress `neo4j start` output.
-* `-r`, `--repeatable`: Exit with success if a test neo4j server is already running. The default `neo4j start` script exits with code `2` if a server is running on its port.
+* `-r`, `--repeatable`: Exit with success if a test neo4j server is already
+  running. The default `neo4j start` script exits with code `2` if a server
+  is running on its port.
+* `-k`, `--kill`: Stop the test server.
 
 Future
 ------
-
-Add libraries for starting and stopping the neo test server programatically.
+* make `npm install` try `which neo4j-test-server`, so users can install
+  their own tests server and avoid the long submodule installation.
+* create libraries for spinning up and shutting down the server programatically.
