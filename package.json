@@ -21,6 +21,9 @@
     "url": "https://github.com/loop-recur/node-neo4j-test/issues"
   },
   "homepage": "https://github.com/loop-recur/node-neo4j-test",
+  "bin": {
+    "neo4j-test": "./bin/neo4j-test"
+  },
   "dependencies": {
     "node-getopt": "^0.2.3",
     "shelljs": "^0.2.6"
