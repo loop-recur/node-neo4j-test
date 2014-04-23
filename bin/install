@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd "${dir}/..";
+if [ ! -d 'neo4j-test-server' ]; then
+  git clone https://github.com/loop-recur/neo4j-test-server.git --depth=1
+fi
