@@ -1,6 +1,6 @@
 {
   "name": "neo4j-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node scripts and libraries for running an in-memory neo4j database in your test scripts.",
   "scripts": {
     "install": "git submodule init && git submodule update"
